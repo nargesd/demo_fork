@@ -120,3 +120,5 @@ map_plot_test <- function (thing){
   ggplot(plot_invol, aes(x=long,y=lat,group=group,fill=as.factor(id))) + 
     geom_polygon() + geom_path(color="white") + geom_polygon(data=filter(plot_invol, id == thing), color="black")
 }
+
+print ("hello")
